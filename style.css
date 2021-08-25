@@ -1,3 +1,8 @@
+#body1 {
+    background-color: yellow;
+}
+
+
 h1 {
     text-align: center;
 }
@@ -122,6 +127,9 @@ h1 {
 
 /* 2nd page */
 
+#body2 {
+    background-color: yellow;
+}
 
 .list2 {
     list-style: 1;
@@ -142,7 +150,7 @@ h1 {
 }
 
 .box1:hover{
-    width: 200px;
+    width: 300px;
 }
 
 .box2 {
@@ -151,7 +159,7 @@ h1 {
 
 .box2:hover{
     height: 300px;
-    width: 200px;
+    width: 300px;
 }
 
 .box3 {
@@ -159,7 +167,7 @@ h1 {
 }
 
 .box3:hover{
-    width: 250px;
+    width: 300px;
 }
 
 .box4 {
@@ -167,7 +175,7 @@ h1 {
 }
 
 .box4:hover{
-    width: 250px;
+    width: 300px;
 }
 
 .box5 {
@@ -175,7 +183,7 @@ h1 {
 }
 
 .box5:hover{
-    width: 250px;
+    width: 300px;
 }
 
 .box6 {
@@ -183,7 +191,7 @@ h1 {
 }
 
 .box6:hover{
-    width: 250px;
+    width: 300px;
 }
 
 .box7 {
@@ -191,12 +199,24 @@ h1 {
 }
 
 .box7:hover{
-    width: 250px;
+    width: 300px;
 }
 
 
 /* 3rd page */
 
+
+#body3 {
+    border: 8px;
+    border-style: outset;
+    border-top-color: white;
+    border-left-color: orangered;
+    border-right-color: green;
+    border-bottom-color: white;
+    overflow: hidden;
+    height: 96.8vh;
+    width: 98vw;
+}
 
 .hid {
     display: grid;
@@ -230,12 +250,14 @@ h1 {
     z-index: -1;
     position: relative;
     overflow-x: hidden;
+    height: 98.5vh;
+    width: 98vw;
 }
 
 .road{
     position: absolute;
     width: 200%;
-    height: 207px;
+    height: 205px;
     top: 480px;
     animation: road 5s cubic-bezier(0.7, 0.7, 0.7, 0.7) infinite;
     animation-direction: normal;
@@ -247,6 +269,7 @@ h1 {
         transform: translateX(-1320px);
     }
 }
+
 .city{
     position: absolute;
     width: 2500px;
@@ -275,6 +298,7 @@ h1 {
         transform: translateX(-1250px);
     }
 }
+
 .car{
     position: absolute;
     height: 150px;
