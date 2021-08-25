@@ -1,0 +1,316 @@
+h1 {
+    text-align: center;
+}
+
+.rows {
+    list-style: 1;
+    padding-left: 30%;
+    line-height: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 400px;
+    margin-left: 30px;
+}
+
+.r1 {
+    background-color: dodgerblue;
+    height: 90px;
+    width: 90px;
+    animation-name: r1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes r1 {
+    0%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: skewX(-20deg);
+    }
+}
+
+.r2 {
+    background-color: gray;
+    height: 90px;
+    width: 90px;
+    animation: r2 2s linear infinite alternate-reverse;
+}
+
+@keyframes r2 {
+    0%{
+        transform: skewY(20deg);
+    }
+    100%{
+        transform: skewY(-20deg);
+    }
+}
+
+.r3 {
+    background-color: dodgerblue;
+    height: 90px;
+    width: 90px;
+    animation: r3 3s linear infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes r3 {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.r41 {
+    background-color: dodgerblue;
+    height: 90px;
+    width: 90px;
+    transition-property: height;
+    animation-name: r41;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes r41 {
+    100%{
+        transform: rotateX(75deg);
+    }
+}
+
+.r42 {
+    background-color: violet;
+    height: 90px;
+    width: 90px;
+    animation-name: r42;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}  
+
+@keyframes r42 {
+    100% {
+        transform: rotateY(75deg)
+    }
+}
+
+.r43 {
+    background-color: mediumseagreen;
+    height: 90px;
+    width: 90px;
+    animation: r43 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes r43 {
+    100%{
+        transform: rotate(100deg);
+    }
+}
+
+.links {
+    text-align: center;
+    font-size: x-large;
+}
+
+
+/* 2nd page */
+
+
+.list2 {
+    list-style: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    line-height: 30px;
+}
+
+.box {
+    background-color: yellowgreen;
+    height: 80px;
+    width: 80px;
+}
+
+.box1 {
+    transition: width 2s 1s;
+}
+
+.box1:hover{
+    width: 200px;
+}
+
+.box2 {
+    transition: height 2s 1s, width 2s 1s;
+}
+
+.box2:hover{
+    height: 300px;
+    width: 200px;
+}
+
+.box3 {
+    transition: width 2s linear 1s;
+}
+
+.box3:hover{
+    width: 250px;
+}
+
+.box4 {
+    transition: width 2s ease 1s;
+}
+
+.box4:hover{
+    width: 250px;
+}
+
+.box5 {
+    transition: width 2s ease-in 1s;
+}
+
+.box5:hover{
+    width: 250px;
+}
+
+.box6 {
+    transition: width 2s ease-out 1s;
+}
+
+.box6:hover{
+    width: 250px;
+}
+
+.box7 {
+    transition: width 2s ease-in-out 1s;
+}
+
+.box7:hover{
+    width: 250px;
+}
+
+
+/* 3rd page */
+
+
+.hid {
+    display: grid;
+    grid-template-columns: 85px 195px 55px;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.happy {
+    background-color: orange;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.independence {
+    background-color: white;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.day {
+    background-color: green;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.sky {
+    background-image: url(./Sky.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.road{
+    position: absolute;
+    width: 200%;
+    height: 207px;
+    top: 480px;
+    animation: road 5s cubic-bezier(0.7, 0.7, 0.7, 0.7) infinite;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+}
+
+@keyframes road {
+    100%{
+        transform: translateX(-1320px);
+    }
+}
+.city{
+    position: absolute;
+    width: 2500px;
+    height: 360px;
+    top: 120px;
+    animation: city 10s cubic-bezier(0.7, 0.7, 0.7, 0.7) infinite normal backwards;
+}
+
+@keyframes city {
+    100%{
+        transform: translateX(-1000px);
+    }
+}
+
+.sun{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 60px;
+    right:0px;
+    animation: sun 20s linear infinite normal backwards;
+}
+
+@keyframes sun {
+    100%{
+        transform: translateX(-1250px);
+    }
+}
+.car{
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    top: 400px;
+    left: 500px;
+}
+
+.flag{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 375px;
+    left: 700px;
+}
+
+.wheel1{
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    top: 480px;
+    left: 526px;
+    animation: rotating 2s linear infinite normal backwards;
+}
+
+.wheel2{
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    top: 480px;
+    left: 709px;
+    animation: rotating 2s linear infinite normal backwards;
+}
+
+@keyframes rotating {
+    100% {
+        transform: rotate(1turn);
+    }
+}
